@@ -23,3 +23,5 @@ To install:
 It should be noted that this may be an older version of the extension and that I am not the developer, so there may be small issues, but I have not noticed any myself. This archive also does not include the readme files; if you need a readme, check the GitHub link above.
 
 ALSO NOTE that a feature of this extension could be considered against Neopets rules - namely, the option to have the extension search Neopets as a logged out user for exact item rarities. This feature should be disabled by default, and should you choose to use it, you assume your own risk of getting your account frozen.
+
+All credit for this extension goes to Coreha. I did not write any of it, I just removed offending code to make it functional again.
