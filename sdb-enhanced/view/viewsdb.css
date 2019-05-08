@@ -1,0 +1,237 @@
+html {
+	min-height: 360px;
+}
+
+body {
+	min-width: 740px;
+}
+
+/* Rarities */
+.r0 {
+	font-style: italic;
+}
+/*
+.rEstimate .r0:before {
+	content: "Unknown";
+}
+*/
+.r50 {
+	color: #000;
+}
+.rEstimate .r50:before {
+	content: "Basic";
+}
+.r75, .r85, .r90, .r95, .r98, .r99 {
+	color: rgb(0, 128, 0); /* green */
+}
+.rEstimate .r75:before {
+	content: "Uncommon";
+}
+.rEstimate .r85:before {
+	content: "Rare";
+}
+.rEstimate .r90:before {
+	content: "Very Rare";
+}
+.rEstimate .r95:before {
+	content: "Ultra Rare";
+}
+.rEstimate .r99:before {
+	content: "Super Rare";
+}
+.r101 {
+	color: #AA4455;
+}
+.rEstimate .r101:before {
+	content: "Special";
+}
+.r107 {
+	color: rgb(255, 165, 0); /* orange */
+}
+.rEstimate .r107:before {
+	content: "Mega Rare";
+}
+.r115 {
+	color: rgb(200, 0, 0); /* red */
+}
+.rEstimate .r115:before {
+	content: "r115+"
+}
+.r180 {
+	color: #666666;
+}
+.rEstimate .r180:before {
+	content: "Retired";
+}
+.r200 {
+	color: rgb(255, 0, 0); /* red */
+}
+.rEstimate .r200:before {
+	content: "Artifact";
+}
+.r500 {
+	color: rgb(255, 0, 0); /* not sure what to make this */
+}
+.rEstimate .r500:before {
+	content: "NC Mall";
+}
+.r999 {
+	color: #000;
+}
+	
+
+.search { width: 720px; margin: 0 auto; }
+
+.searchContainer {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background:rgba(255,255,255,0.9);
+}
+
+.search input::-webkit-outer-spin-button,
+.search input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+.folder-label {
+	float: left;
+}
+
+.search ul.dropdown-menu {
+	text-align: left;
+	margin-left: -100px;
+}
+
+.search .folder-label ul.dropdown-menu {
+	margin-left: -125px;
+}
+
+.action ul.dropdown-menu {
+	top: -120px;
+	min-width: 10px;
+}
+
+form[name=itemForm] {
+	margin-top: 85px;
+}
+
+::-webkit-scrollbar {
+	height: 12px;
+	width: 12px;
+	background: #ededed;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.35);
+	-webkit-border-radius: 1ex;
+}
+::-webkit-scrollbar-corner {
+	background: #000;
+}
+
+/* Fluffy */
+a.popout {
+	cursor: pointer;
+	padding: 2px 7px 0;
+	z-index: 2;
+}
+
+.selectLinks {
+	background: #ededed;
+	position: absolute;
+	left: 0px;
+	padding-left: 10px;
+}
+.selectLinks a {
+	cursor: pointer;
+}
+
+span.pageLinks {
+	position: absolute;
+	right: 0px;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+span.pageLinks a {
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+div.pagelink {
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* Search */
+.input-tiny {
+	width: 45px;
+	text-align: center;
+}
+.input-mediumsmall {
+	width: 110px;
+}
+.input-full {
+	width: 80%;
+	text-align: center;
+}
+
+#search {
+	margin-bottom: 5px;
+}
+
+div.search {
+	text-align: center;
+}
+div.search form {
+	margin: 10px 0;
+}
+
+/* Table */
+.items {
+	margin-bottom: 35px;
+}
+.items td:first-child {
+	padding-left: 0;
+}
+.items td {
+	vertical-align: middle;
+}
+.items img {
+	width: 80px;
+	height: 80px;
+}
+.hidden {
+	display: none !important;
+}
+
+.noresults, .error, .action, .msg {
+	position: fixed;
+	bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+.noresults, .error, .msg {
+	z-index: 3;
+}
+.action {
+	z-index: 1;
+	padding: 5px 0;
+	background: #ededed;
+}
+
+/* Bootstrap overrides */
+select.input-small {
+	width: 100px;
+}
+
+div.action form, div.action label {
+	margin-bottom: 0px;
+}
